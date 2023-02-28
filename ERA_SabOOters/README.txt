@@ -1,6 +1,6 @@
 CHRISTON Eliot, LEVEQUE Robin, PETARD Adrien (ERA)
 
-Bienvenue sur SabOOters !
+Bienvenue sur SabOOters ! (issu du jeu de société : Saboteurs)
 
 Pour jouer veuillez simplement vous assurer que tous les fichiers contenus dans 'ERA_SabOOters' sont bien téléchargés:
 
