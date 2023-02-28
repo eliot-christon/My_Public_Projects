@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <param name="linear_scale" value="3.0"/>
+  <param name="angular_scale" value="3.0"/>
+  <param name="teleop_turtle_name" value="/t2"/> 
+
+  <node pkg="turtlesim" type="turtlesim_node" name="simScreen"/>
+
+  <node pkg="mybot_tp1_pkg" type="change_background2.py" name="bg_node" output="screen"/>
+
+  <node pkg="mybot_tp1_pkg" type="mybot_spawn.py" name="spawn" respawn="false" required="false"/>
+
+  <node pkg="mybot_tp1_pkg" type="mybot_teleop.py" name="teleop" output="screen" required="true"/>
+
+  <node pkg="mybot_tp1_pkg" type="mybot_color.py" name="color" output="screen"/>
+
+  <node pkg="ros_tutorial_topic" type="turtlesim_saver_tuto.py" name="saver"/>
+
+
+</launch>
