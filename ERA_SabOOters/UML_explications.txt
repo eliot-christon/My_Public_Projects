@@ -1,0 +1,36 @@
+Partie-Manche :
+  Entre Partie et manche, il existe un lien de composition.
+  Il n'existe pas de manche sans partie, une manche est créée et détruite lors d'une partie.
+
+Plateau-Manche :
+  C'est le même lien qui lie Manche et Plateau.
+  La manche détient un plateau qu'elle ne partage pas.
+
+Partie-Joueur :
+  Par ailleurs, entre Joueur et Partie, il y a un lien d'agrégation.
+  En effet un joueur existe hors de la partie, et la classe partie peut partager ses joueurs.
+
+ListeCartes-Carte :
+  Il existe également un lien d'agrégation entre ListeCartes et Carte.
+  Une liste de carte détient des cartes mais peut les partager.
+  Les cartes peuvent exister en dehors de la liste.
+  (utile pour l'affichage de plusieurs cartes)
+
+Plateau-Carte :
+  Pareillement entre Plateau et Carte.
+
+Joueur-RobOOt :
+  La classe RobOOt hérite de Joueur.
+  En effet, un Robot est un joueur particulier.
+
+Carte-Carte... :
+  Toutes les classes Carte... héritent de la classe Carte,
+  qui contient les attributs généraux, tels que le nom et le visuel.
+
+CarteChemin-Carte... :
+  Les différentes cartes chemin sont issues de la classe CarteChemin. (héritage)
+  Elles possèdent toutes une logique concernant leurs dirrections (URDL)
+
+CarteAction-Carte... :
+  De même, les différentes cartes action héritent de la classe CarteAction. (héritage)
+  Elles ont toutes la méthode action().
