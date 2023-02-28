@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <param name="linear_scale" value="0.2"/>
+  <param name="angular_scale" value="0.2"/>
+  <param name="teleop_turtle_name" value=""/> 
+
+  <node pkg="mybot_tp1_pkg" type="mybot_teleop.py" name="teleop"
+        output="screen" required="true">
+  </node>	
+
+  <node pkg="mybot_tp1_pkg" type="mybot_color.py" name="color"
+        output="screen">
+  </node>
+
+
+</launch>
